@@ -10,3 +10,146 @@
     } 
 }
 */
+
+.quote-icon {
+  font-size: 3.5rem;
+  color:#D8B4FF ;
+}
+
+.vl {
+  border-left: 2px solid white;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  /* top: 50; */
+} 
+
+h1{
+    font-size:3.1rem;
+    padding: 2% 0;
+}
+
+h2{
+    font-size: 2.6rem;
+}
+
+h3{
+    font-size: 2.9rem;
+}
+
+h4{
+    font-size:1.35rem;
+}
+
+p{
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+p:last-child{margin-bottom: 0;}
+
+.bg-img-index{
+  background-position:center;
+  background-size:cover;
+  /* background-image:url('images/sg.png'); */
+  /* background-repeat:no-repeat;  */
+  /* width:100%; */
+}
+/* div, section{border: 2px solid yellow;} */
+
+/* --------------------HEADER + MOBILE MENU */
+.hamburger-button{
+    border:none;
+    color:#000000;
+    cursor:pointer;
+    display:inline-block;
+    font-size:2rem;
+    padding: 0 0.5rem;
+}
+
+.hamburger-button.active{color: #A3809A;}
+
+.mobile-menu{
+    background-color: #ffffff;
+    color:#000000;
+    display:none;
+    padding: 5%;
+}
+
+.mobile-menu a{
+    color:inherit;
+    display:block;
+    padding: 5vh 0;
+    text-align: center;
+    text-decoration:none;
+    z-index: 2;
+}
+
+
+/* --------------------COOKIE BANNER */
+#cookie-notice {
+    padding: .75rem 1rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    background: #1F1F1F;
+    color: #ffffff;
+}
+#cookie-notice a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+#cookie-notice .button-subtle {
+  opacity: 0.8;
+}
+
+#close-cookie-banner {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.5
+}
+
+
+/* ----------------------------------------MEDIA QUERIES------------- */
+/* --------------------DEFAULT RESPONSIVE STYLES */
+.sm-show{display: none;}
+.sm-hide{display:inline-block;}
+
+/* --------------------LG MEDIA QUERY (128em / 2048px) */
+/* @media(max-width:128em){
+} */
+
+/* @media(max-width:75em){
+} */
+
+/* --------------------MD MEDIA QUERY (64em / 1024px) */
+@media(max-width:64em){
+
+}
+
+/* --------------------SM Media Query (48em / 768px) */
+@media(max-width:48em){
+    .quote-icon{font-size:2rem;}
+    .sm-hide{display:none;}
+    .sm-show {display: inline-block;}
+
+      .hide-header{display:none;}
+
+}
+
+/* --------------------XS Media Query (36em / 576px) */
+@media (max-width: 36em) {
+    .xs-hide{display: none;}
+    .xs-show { display: block; }
+}
+
+/* --------------------XXS Media Query (25em / 400px) */
+/* NOT part of default Gridlex styling */
+/* @media (max-width: 25em) {} */ 
+
