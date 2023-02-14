@@ -13,7 +13,7 @@ module.exports = {
       'dark': '#393939', 
       'darkest-p': '#5B4256',
       'dark-p': '#6A4D64', 
-      'medium-p': '#98718E', 
+      'med-p': '#98718E', 
       'light-p': '#C3ACBD',
       'med-g': '#E0E0E0',
       'light-g': '#EFEFEF',

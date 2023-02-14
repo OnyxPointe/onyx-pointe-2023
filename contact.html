@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Contact page
+intro-bg-color: light-p
+intro-text-color: black
 intro-h1: Contact
 intro-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus dolorum reiciendis nesciunt maiores quasi sit dicta numquam soluta perspiciatis ullam impedit placeat neque esse minima dolores, nobis praesentium maxime.
+next-section-bg: dark
+hide-ig-bg: hide
 ---
 
 {% include intro-two.html %}
@@ -19,13 +23,13 @@ intro-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam d
   <div class="absolute h-[25vh] bg-gray-700 w-full bottom-0 -z-10">
   </div>
 </section> -->
-<section class="h-[50vh] bg-gray-700">
-  <div class="vl h-[50vh] bg-gray-700">
+<section class="h-[50vh] bg-dark">
+  <div class="vl h-[50vh]">
   </div>
 </section>
 
 <!------------ FORM ------------>
-<section class="bg-gray-700 pb-24 pt-10">
+<section class="bg-dark pb-24 pt-10">
   <form class="grid-col-1 mx-6 grid gap-y-4 text-center text-sm md:mx-16 md:grid-cols-2 md:gap-8 lg:gap-14" action="https://formspree.io/f/xwkybyvy" method="POST">
     <div class="grid-col-1 grid gap-y-4 md:gap-y-6">
       <input class="rounded-sm py-3 px-2" type="text" name="_name" id="_name" placeholder="Name*" required />
@@ -34,7 +38,7 @@ intro-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam d
     </div>
     <div class="grid-col-1 grid gap-y-4 md:gap-y-6">
       <textarea class="row-span-4 rounded-sm px-2 pt-3 pb-12 md:py-3" name="message" id="message" placeholder="About your business*" required></textarea>
-      <button type="submit" class="rounded-sm bg-purple-300 py-2 md:py-0">Send</button>
+      <button type="submit" class="rounded-sm bg-med-p py-2 md:py-0">Send</button>
     </div>
   </form>
 </section>

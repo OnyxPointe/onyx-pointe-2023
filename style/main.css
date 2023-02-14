@@ -13,7 +13,7 @@
 
 .quote-icon {
   font-size: 3.5rem;
-  color:#D8B4FF ;
+  color:#C3ACBD ;
 }
 
 .vl {
@@ -30,15 +30,15 @@ h1{
 }
 
 h2{
-    font-size: 2.6rem;
+    font-size: 1.5rem;
 }
 
 h3{
-    font-size: 2.9rem;
+    /* font-size: 2.9rem; */
 }
 
 h4{
-    font-size:1.35rem;
+    /* font-size:1.35rem; */
 }
 
 p{
@@ -49,9 +49,10 @@ p{
 p:last-child{margin-bottom: 0;}
 
 .bg-img-index{
-  background-position:center;
-  background-size:cover;
-  /* background-image:url('images/sg.png'); */
+  /* background-position:center; */
+  /* background-size:cover; */
+  background-image:url('images/ph.jpg');
+  /* background-repeat: repeat; */
   /* background-repeat:no-repeat;  */
   /* width:100%; */
 }
@@ -115,7 +116,7 @@ p:last-child{margin-bottom: 0;}
   opacity: 0.5
 }
 
-
+.hide{display:none;}
 /* ----------------------------------------MEDIA QUERIES------------- */
 /* --------------------DEFAULT RESPONSIVE STYLES */
 .sm-show{display: none;}
