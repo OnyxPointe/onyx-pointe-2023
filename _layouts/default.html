@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/dist/main.css' | relative_url }}">
-    <title>{{page.title}}</title>
-</head>
+{% include head.html %}
 
-<body class="bg-black text-white">
+<body class="bg-darkest text-white">
+    {% include header-nav.html %}
     {{content}}
+    {% include footer.html %}
+    {% include cookie-banner.html %}
+    <!-- --------------------JS------------------- -->
+    <!-- jQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CUSTOM JS FILE -->
+    <script src="/scripts.js"></script>
+    <!-- LIGHT WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 </body>
 
 </html>
