@@ -11,6 +11,10 @@
 }
 */
 
+.body{
+
+}
+
 .quote-icon {
   font-size: 3.5rem;
   color:#C3ACBD ;
@@ -25,8 +29,7 @@
 } 
 
 h1{
-    font-size:3.1rem;
-    padding: 2% 0;
+    font-size:2rem;
 }
 
 h2{
@@ -42,8 +45,17 @@ h4{
 }
 
 p{
-    line-height: 1.4;
+    font-family: 'Jost', sans-serif;
+    font-weight:300;
+    line-height: 1.3;
     margin-bottom: 1rem;
+}
+
+.background-img {
+  background-image: url('/images/sg.png');
+  /* background-size: cover; */
+  background-repeat: repeat;
+/* background-color:yellow; */
 }
 
 p:last-child{margin-bottom: 0;}
