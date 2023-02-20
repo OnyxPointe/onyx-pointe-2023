@@ -64,26 +64,24 @@ a:hover{
 /* --------------------HEADER + MOBILE MENU */
 .hamburger-button{
     border:none;
-    color:#A3809A;
+    color:#FFFFFF;
     cursor:pointer;
     display:inline-block;
     font-size:1.8rem;
     padding: 0 0.5rem;
 }
 
-.hamburger-button.active{color: #FFFFFF;}
+.hamburger-button.active{color: #A3809A;}
 
 .mobile-menu{
-    background-color:#1F1F1F;
+    background-color:#A3809A;
     color:#FFFFFF;
     display:none;
-    /* padding: 5%; */
 }
 
 .mobile-menu a{
     display: inline;
     padding: 0 .5rem;
-    /* text-align: center; */
     text-decoration:none;
     text-transform: uppercase;
     z-index: 2;
