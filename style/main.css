@@ -109,8 +109,7 @@ p:last-child{margin-bottom: 0;}
     right: 1rem;
     bottom: 0;
     width: calc(100% - 2rem);
-    background: #1F1F1F;
-    color: #ffffff;
+    color: #000000;
 }
 #cookie-notice a {
     display: inline-block;
