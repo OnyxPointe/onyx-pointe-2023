@@ -109,7 +109,6 @@ p:last-child{margin-bottom: 0;}
     right: 1rem;
     bottom: 0;
     width: calc(100% - 2rem);
-    color: #000000;
 }
 #cookie-notice a {
     display: inline-block;
