@@ -11,38 +11,26 @@
 }
 */
 
-.body{
-
-}
-
+/* --------------------ELEMENTS */
 .quote-icon {
-  font-size: 3.5rem;
-  color:#C3ACBD ;
+    color:#C3ACBD;
+    font-size: 3.5rem;
 }
 
 .vl {
-  border-left: 2px solid white;
-  position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  /* top: 50; */
+    border-left: 2px solid white;
+    left: 50%;
+    margin-left: -3px;
+    position: absolute;
 } 
 
-h1{
-    font-size:2rem;
-}
+/* --------------------TYPOGRAPHY */
+h1{font-size:2rem;}
 
-h2{
-    font-size: 1.5rem;
-}
+h2{font-size: 1.5rem;}
 
-h3{
-    /* font-size: 2.9rem; */
-}
-
-h4{
-    /* font-size:1.35rem; */
-}
+/* h3{} */
+/* h4{} */
 
 p{
     font-family: 'Jost', sans-serif;
@@ -51,56 +39,59 @@ p{
     margin-bottom: 1rem;
 }
 
-a:hover{color: #A3809A;
-font-weight: 400;}
-
-p a{border-bottom: 10px solid inherit;}
-
-.background-img {
-  background-image: url('/images/sg.png');
-  /* background-size: cover; */
-  background-repeat: repeat;
-/* background-color:yellow; */
-}
-
 p:last-child{margin-bottom: 0;}
 
-.bg-img-index{
-  /* background-position:center; */
-  /* background-size:cover; */
-  background-image:url('images/ph.jpg');
-  /* background-repeat: repeat; */
-  /* background-repeat:no-repeat;  */
-  /* width:100%; */
+p a{padding-bottom: 2px;
+    border-bottom: 10px solid inherit;}
+
+a:hover{
+    color: #A3809A;
+    cursor: pointer;
+    font-weight: 400;
 }
-/* div, section{border: 2px solid yellow;} */
+
+
+/* --------------------BACKGROUND IMGS */
+.background-img {
+    background-image: url('/images/sg.png');
+    background-repeat: repeat;
+}
+
+.bg-img-index{
+  background-image:url('images/ph.jpg');
+}
 
 /* --------------------HEADER + MOBILE MENU */
 .hamburger-button{
     border:none;
-    color:#000000;
+    color:#A3809A;
     cursor:pointer;
     display:inline-block;
-    font-size:2rem;
+    font-size:1.8rem;
     padding: 0 0.5rem;
 }
 
-.hamburger-button.active{color: #A3809A;}
+.hamburger-button.active{color: #FFFFFF;}
 
 .mobile-menu{
-    background-color: #ffffff;
+    background-color: #A3809A;
     color:#000000;
     display:none;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 .mobile-menu a{
-    color:inherit;
+    color:#FFFFFF;
     display:block;
-    padding: 5vh 0;
-    text-align: center;
+    padding: 1rem 0;
+    text-align: right;
     text-decoration:none;
+    text-transform: uppercase;
     z-index: 2;
+}
+
+.mobile-menu a:hover{
+    color:#000000;
 }
 
 
