@@ -51,6 +51,11 @@ p{
     margin-bottom: 1rem;
 }
 
+a:hover{color: #A3809A;
+font-weight: 400;}
+
+p a{border-bottom: 10px solid inherit;}
+
 .background-img {
   background-image: url('/images/sg.png');
   /* background-size: cover; */
