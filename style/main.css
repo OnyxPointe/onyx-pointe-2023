@@ -143,7 +143,12 @@ a:hover{
     .sm-hide{display:none;}
     .sm-show {display: inline-grid;}
 
-      .hide-header{display:none;}
+    /* .hide-header{display:none;} */
+
+    .arrow{
+        font-size:1.4rem;
+        margin-top:.2rem;
+    }
 
 }
 
