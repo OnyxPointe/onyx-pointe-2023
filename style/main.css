@@ -123,7 +123,7 @@ a:hover{
 /* ----------------------------------------MEDIA QUERIES------------- */
 /* --------------------DEFAULT RESPONSIVE STYLES */
 .sm-show{display: none;}
-.sm-hide{display:inline-block;}
+/* .sm-hide{display: inline-grid;} */
 
 /* --------------------LG MEDIA QUERY (128em / 2048px) */
 /* @media(max-width:128em){
@@ -141,7 +141,7 @@ a:hover{
 @media(max-width:48em){
     .quote-icon{font-size:2rem;}
     .sm-hide{display:none;}
-    .sm-show {display: inline-block;}
+    .sm-show {display: inline-grid;}
 
       .hide-header{display:none;}
 
