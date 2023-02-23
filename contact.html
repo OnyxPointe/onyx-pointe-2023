@@ -20,48 +20,16 @@ hide-ig-bg: hide
 <section class="bg-dark pb-24 pt-10">
   <form class="grid-col-1 mx-6 grid gap-y-4 text-center text-sm md:mx-16 md:grid-cols-2 md:gap-8 lg:gap-14" action="https://formspree.io/f/xwkybyvy" method="POST">
     <div class="grid-col-1 grid gap-y-4 md:gap-y-6">
-      <input class="rounded-sm py-3 px-2" type="text" name="_name" id="_name" placeholder="Name*" required />
-      <input class="rounded-sm py-3 px-2" type="email" name="_email" id="_email" placeholder="Email*" required />
-      <input class="rounded-sm py-3 px-2" type="text" name="_subject" id="_subject" placeholder="Subject" />
+      <input class="rounded-sm py-3 px-2 text-black" type="text" name="_name" id="_name" placeholder="Name*" required />
+      <input class="rounded-sm py-3 px-2 text-black" type="email" name="_email" id="_email" placeholder="Email*" required />
+      <input class="rounded-sm py-3 px-2 text-black" type="text" name="_subject" id="_subject" placeholder="Subject" />
     </div>
     <div class="grid-col-1 grid gap-y-4 md:gap-y-6">
-      <textarea class="row-span-4 rounded-sm px-2 pt-3 pb-12 md:py-3" name="message" id="message" placeholder="About your business*" required></textarea>
-      <button type="submit" class="rounded-sm bg-med-p py-2 md:py-0">Send</button>
+      <textarea class="row-span-4 rounded-sm px-2 pt-3 pb-12 md:py-3 text-black" name="message" id="message" placeholder="About your business*" required></textarea>
+      <button type="submit" class="rounded-sm bg-med-p hover:bg-med-g hover:text-black py-2 md:py-0">Send</button>
     </div>
   </form>
 </section>
-
-
-<!------------ CONTACT INTRO ------------>
-<!-- <section class="mt-48 md:mt-36 bg-gray-700 pb-52 md:py-20">
-  <div class="absolute top-36 mx-10 content-center bg-purple-300 py-8 px-6 md:top-56 md:mx-24 md:py-10 lg:mx-56 lg:py-20">
-    <h1 class="text-2xl uppercase md:text-center">Contact</h1>
-    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam quos maxime architecto necessitatibus provident sint labore repellendus consectetur. Consequuntur, ipsam. Porro nesciunt, numquam similique ducimus sapiente voluptates molestias saepe.</p>
-    <p class="md:text-center"><a href="#" class="text-center">hello@onyxpointe.com</a></p>
-  </div>
-</section> -->
-
-<!------------ VERTICAL LINE ------------>
-<!-- <section class="bg-gray-700 py-8 md:pb-14 md:pt-6 lg:pt-20 text-center">
-  <div class="h-[45vh] text-white">
-    <div class="vl h-[45vh]"></div>
-  </div>
-</section> -->
-
-<!------------ FORM ------------>
-<!-- <section class="bg-gray-700 pb-24">
-  <form class="grid-col-1 mx-6 grid gap-y-4 text-center text-sm md:mx-16 md:grid-cols-2 md:gap-8 lg:gap-14" action="https://formspree.io/f/xwkybyvy" method="POST">
-    <div class="grid-col-1 grid gap-y-4 md:gap-y-6">
-      <input class="rounded-sm py-3 px-2" type="text" name="_name" id="_name" placeholder="Name*" required />
-      <input class="rounded-sm py-3 px-2" type="email" name="_email" id="_email" placeholder="Email*" required />
-      <input class="rounded-sm py-3 px-2" type="text" name="_subject" id="_subject" placeholder="Subject" />
-    </div>
-    <div class="grid-col-1 grid gap-y-4 md:gap-y-6">
-      <textarea class="row-span-4 rounded-sm px-2 pt-3 pb-12 md:py-3" name="message" id="message" placeholder="About your business*" required></textarea>
-      <button type="submit" class="rounded-sm bg-purple-300 py-2 md:py-0">Send</button>
-    </div>
-  </form>
-</section> -->
 
 <!------------ LIVE IG FEED ------------>
 {% include ig-feed.html %}
