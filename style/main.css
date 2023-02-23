@@ -41,8 +41,10 @@ p{
 
 p:last-child{margin-bottom: 0;}
 
-p a{padding-bottom: 2px;
-    border-bottom: 10px solid inherit;}
+a{
+    padding-bottom: 2px;
+    border-bottom: 10px solid inherit;
+}
 
 a:hover{
     color: #A3809A;
