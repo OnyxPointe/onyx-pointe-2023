@@ -4,6 +4,10 @@ title: Portfolio
 intro-bg-color: darkest-p
 page-h1: Portfolio
 intro-blurb: Each site we build is designed not only to convey necessary information to your customers but also to set the tone of your brand, presenting a cohesive identity for your business that will make you stand out from your competition. Below are some sample websites showing our work to help you imagine your future website.
+sm-banner-bg: med-p
+sm-banner-bg-md: light-g
+sm-banner-text-color: white
+sm-banner-text-color-md: black
 sm-banner-text: Learn more about what we offer
 sm-banner-link: /services.html
 review-one: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sunt officia reiciendis totam ipsa ratione doloribus, consectetur consequatur magnam? Obcaecati iure totam dolores enim, voluptatibus soluta quod impedit ratione odio.
@@ -30,16 +34,16 @@ website-r-link: www.chiarocreations.com
     <img src="https://source.unsplash.com/oy_A8U36e_M" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-12 sm-hide"></div>
     <div class="col-span-2 md:col-span-2 grid content-center">
-      <h2 class="uppercase text-2xl font-header">{{page.website-l-name}}</h2>
-      <p class="mb-2"><span class="italic">Features:</span> {{page.website-l-features}}</p>
+      <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{page.website-l-name}}</h2>
+      <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{page.website-l-features}}</p>
       <a href="{{page.website-l-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm">Visit Site</a>
     </div>
   </div>
 
   <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center">
     <div class="col-span-2 md:col-span-2 grid content-center md:text-right order-2 md:order-none">
-      <h2 class="uppercase text-2xl font-header">{{page.website-r-name}}</h2>
-      <p class="mb-2"><span class="italic">Features:</span> {{page.website-r-features}}</p>
+      <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{page.website-r-name}}</h2>
+      <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{page.website-r-features}}</p>
       <a href="{{page.website-r-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm">Visit Site</a>
     </div>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-10 sm-hide"></div>
