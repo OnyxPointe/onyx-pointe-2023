@@ -3,32 +3,47 @@ layout: default
 title: Portfolio
 intro-bg-color: dark-p
 page-h1: Portfolio
-intro-blurb: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, culpa. Iusto sit velit provident consequatur repellat. Assumenda pariatur adipisci ab sequi, temporibus cumque in cupiditate nostrum repudiandae, asperiores placeat minima.
+intro-blurb: Each site we build is designed not only to convey necessary information to your customers but also to set the tone of your brand, presenting a cohesive identity for your business that will make you stand out from your competition. Below are some sample websites showing our work to help you imagine your future website.
+sm-banner-text: Learn more about what we offer
+sm-banner-link: /services.html
+review-one: Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sunt officia reiciendis totam ipsa ratione doloribus, consectetur consequatur magnam? Obcaecati iure totam dolores enim, voluptatibus soluta quod impedit ratione odio.
+reviewer-one: Astoria Real Estate
+reviewer-location-one: United States
+review-two: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, maiores commodi libero iste in distinctio et atque debitis eveniet ipsam natus repellat nisi id quibusdam ad quos consequuntur. Iure, pariatur.
+reviewer-two: Chiaro Creations
+reviewer-location-two: Netherlands
+website-l-name: Pacific Pro Realty
+website-l-features: Multipage Site, Embedded FlexMLS Home search, Dynamic Location Map
+website-l-link: www.google.com
+website-r-name: Chiaro Creations
+website-r-features: 
+website-r-link: www.chiarocreations.com
 ---
 
 <!------------ PORTFOLIO INTRO ------------>
 {% include intro-imgs.html %}
 
 <!------------ PORTFOLIO SITES ------------>
-<section class="py-14 px-16 lg:px-36">
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-4 pb-20 md:pb-0 items-center">
-    <img src="https://source.unsplash.com/oy_A8U36e_M" class="col-span-2 h-[60vh] bg-gray-200 object-cover"/>
+<!-- TODO - Turn into loop with everyother section flipping on md screen + larger -->
+<section class="px-6 py-10 md:py-14 md:px-16 lg:px-36">
+  <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center">
+    <img src="https://source.unsplash.com/oy_A8U36e_M" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-12 sm-hide"></div>
-    <div class="col-span-2 md:col-span-1 grid content-center">
-      <h2 class="uppercase font-semibold">Site name</h2>
-      <p class="mb-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href="#" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm">Visit Site</a>
+    <div class="col-span-2 md:col-span-2 grid content-center">
+      <h2 class="uppercase text-2xl font-header">{{page.website-l-name}}</h2>
+      <p class="mb-2"><span class="italic">Features:</span> {{page.website-l-features}}</p>
+      <a href="{{page.website-l-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm">Visit Site</a>
     </div>
   </div>
 
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-4 pb-20 md:pb-0 items-center">
-    <div class="col-span-2 md:col-span-1 grid content-center md:text-right order-2 md:order-none">
-      <h2 class="uppercase font-semibold">Site name</h2>
-      <p class="mb-2 text-sm"><span class="italic">Features:</span> ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href="#" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm">Visit Site</a>
+  <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center">
+    <div class="col-span-2 md:col-span-2 grid content-center md:text-right order-2 md:order-none">
+      <h2 class="uppercase text-2xl font-header">{{page.website-r-name}}</h2>
+      <p class="mb-2"><span class="italic">Features:</span> {{page.website-r-features}}</p>
+      <a href="{{page.website-r-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm">Visit Site</a>
     </div>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-10 sm-hide"></div>
-    <img src="/images/ph.jpg" class="col-span-2 h-[60vh] bg-gray-200 object-cover"/>
+    <img src="/images/ph.jpg" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
   </div>
 </section>
 

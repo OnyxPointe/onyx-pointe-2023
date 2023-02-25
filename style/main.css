@@ -38,7 +38,7 @@ p{
 
 p:last-child{margin-bottom: 0;}
 
-p a{border-bottom:1px solid;}
+/* p a{border-bottom:1px solid;} */
 
 /* a{
     padding-bottom: 2px;
