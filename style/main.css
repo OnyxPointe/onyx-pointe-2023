@@ -41,18 +41,9 @@ p:last-child{margin-bottom: 0;}
 p a{border-bottom:1px solid;}
 p.no-bb a{border-bottom:none;}
 
-
-/* p a:hover {color:#A3809A;} */
-
-/* a{
-    padding-bottom: 2px;
-    border-bottom: 10px solid inherit;
-} */
-
 a:hover{
     color: #A3809A;
     cursor: pointer;
-    /* font-weight: 400; */
 }
 
 ul{
@@ -65,6 +56,12 @@ li a{border-bottom: 1px solid;}
 li a:hover{color:#A3809A;}
 
 section.privacy-policy p{margin-bottom:1rem;}
+
+a.custom-btn-dark-hov:hover{
+    background-color:#393939;
+    color: #FFFFFF;
+}
+ div.btn-right a{display:inline-block;}
 
 /* --------------------BACKGROUND IMGS */
 .background-img {
