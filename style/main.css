@@ -61,7 +61,6 @@ a.custom-btn-dark-hov:hover{
     background-color:#393939;
     color: #FFFFFF;
 }
- div.btn-right a{display:inline-block;}
 
 /* --------------------BACKGROUND IMGS */
 .background-img {
@@ -131,46 +130,6 @@ a.custom-btn-dark-hov:hover{
   opacity: 0.5
 }
 
-/* --------------------FORM */
-
-/* form input, 
-form textarea{
-  background-color: #EFEFEF;
-  border: 1px solid #EFEFEF; 
-}
-
-form input:focus,
-form textarea:focus{border-color: #A3809A;
-color:#000000;}
-
-form label{ 
-  color: #000000;
-}
-
-form button{
-  background-color:#CEBBC9;
-  border:none;
-  border-radius: 3px;
-  color:#000000;
-  font-size:0.9rem;
-  letter-spacing: 0.1em;
-  margin: 0.5rem 0;
-  min-height: 2.3rem;
-  padding: 0.5rem 2rem;
-  width: 90%;  
-}
-
-form button:hover{
-    background-color:#825E7C;
-    color:#F8F8F8;
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -ms-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-}
-
-form textarea{min-height: 8rem;} */
 
 .hide{display:none;}
 /* ----------------------------------------MEDIA QUERIES------------- */
@@ -195,8 +154,6 @@ form textarea{min-height: 8rem;} */
     .quote-icon{font-size:2rem;}
     .sm-hide{display:none;}
     .sm-show {display: inline-grid;}
-
-    /* .hide-header{display:none;} */
 
     .arrow{
         font-size:1.4rem;
