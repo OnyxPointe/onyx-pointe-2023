@@ -38,7 +38,9 @@ p{
 
 p:last-child{margin-bottom: 0;}
 
-/* p a{border-bottom:1px solid;} */
+p a{border-bottom:1px solid;}
+
+/* p a:hover {color:#A3809A;} */
 
 /* a{
     padding-bottom: 2px;
@@ -46,11 +48,21 @@ p:last-child{margin-bottom: 0;}
 } */
 
 a:hover{
-    /* color: #A3809A; */
+    color: #A3809A;
     cursor: pointer;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
+ul{
+    list-style: square;
+    margin-left:3rem;
+}
+
+li{font-weight:300;}
+li a{border-bottom: 1px solid;}
+li a:hover{color:#A3809A;}
+
+section.privacy-policy p{margin-bottom:1rem;}
 
 /* --------------------BACKGROUND IMGS */
 .background-img {
