@@ -1,9 +1,10 @@
 ---
 layout: default 
 title: Portfolio
-intro-bg-color: darkest-p
+intro-color: darkest-p
 page-h1: Portfolio
 intro-blurb: Each site we build is designed not only to convey necessary information to your customers but also to set the tone of your brand, presenting a cohesive identity for your business that will make you stand out from your competition. Below are some sample websites showing our work to help you imagine your future website.
+intro-ft_img: /images/ph.jpg
 sm-banner-text: Learn more about what we offer
 sm-banner-link: /services.html
 sm-banner-bg: med-p 
@@ -16,41 +17,54 @@ reviewer-location-one: United States
 review-two: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, maiores commodi libero iste in distinctio et atque debitis eveniet ipsam natus repellat nisi id quibusdam ad quos consequuntur. Iure, pariatur.
 reviewer-two: Chiaro Creations
 reviewer-location-two: Netherlands
-website-l-name: Pacific Pro Realty
-website-l-features: Multipage Site, Embedded FlexMLS Home search, Dynamic Location Map
-website-l-link: www.google.com
-website-r-name: Chiaro Creations
-website-r-features: E-commerce, Embedded Video, Product Listings, Quick Buy Button
-website-r-link: www.chiarocreations.com
+portfolio-projects:
+ - site-l_image: https://source.unsplash.com/oy_A8U36e_M
+   site-l-name: Pacific Pro Realty
+   site-l-features: Multipage Site, Embedded FlexMLS Home search, Dynamic Location Map
+   site-l-link: www.google.com
+   site-r_image: /images/ph.jpg
+   site-r-name: Chiaro Creations
+   site-r-features: E-commerce, Embedded Video, Product Listings, Quick Buy Button
+   site-r-link: https://chiarocreations.com/
+ - site-l_image: https://source.unsplash.com/oy_A8U36e_M
+   site-l-name: Pacific Pro Realty
+   site-l-features: Multipage Site, Embedded FlexMLS Home search, Dynamic Location Map
+   site-l-link: www.google.com
+   site-r_image: /images/ph.jpg
+   site-r-name: Chiaro Creations
+   site-r-features: E-commerce, Embedded Video, Product Listings, Quick Buy Button
+   site-r-link: https://chiarocreations.com/
 ---
 
 <!------------ PORTFOLIO INTRO ------------>
-{% include intro-imgs.html %}
+
 
 <!------------ PORTFOLIO SITES ------------>
-<!-- TODO - Turn into loop with everyother section flipping on md screen + larger -->
 <section class="px-6 py-10 md:py-14 md:px-16 lg:px-36">
+  {% for item in page.portfolio-projects %}
   <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center">
-    <img src="https://source.unsplash.com/oy_A8U36e_M" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
+    <img src="{{item.site-l_image}}" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-12 sm-hide"></div>
     <div class="col-span-2 md:col-span-2 grid content-center">
-      <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{page.website-l-name}}</h2>
-      <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{page.website-l-features}}</p>
-      <div><a href="{{page.website-l-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
+      <h2 class="mb-1  md:mb-0 uppercase text-2xl font-header">{{item.site-l-name}}</h2>
+      <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{item.site-l-features}}</p>
+      <div><a href="{{item.site-l-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
     </div>
   </div>
 
   <!-- Remove class of "pb-20" on final <div> holding the project info and img -->
   <div class="grid grid-cols-2 md:grid-cols-7 gap-4 md:pb-0 items-center">
     <div class="col-span-2 md:col-span-2 grid content-center md:text-right order-2 md:order-none">
-      <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{page.website-r-name}}</h2>
-      <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{page.website-r-features}}</p>
-      <div><a href="{{page.website-r-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
+      <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{item.site-r-name}}</h2>
+      <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{item.site-r-features}}</p>
+      <div><a href="{{item.site-r-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
     </div>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-10 sm-hide"></div>
-    <img src="/images/ph.jpg" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
+    <img src="{{item.site-r_image}}" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
   </div>
+  {% endfor %}
 </section>
+
 
 <!------------ SMALL BANNER ------------>
 {% include sm-banner.html %}

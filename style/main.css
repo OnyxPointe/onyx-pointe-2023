@@ -72,6 +72,12 @@ a.custom-btn-dark-hov:hover{
   background-image:url('images/ph.jpg');
 }
 
+.bg-concrete{
+    background-image:url('images/concrete-bg-');
+    background-position: center;
+    background-size: cover;
+}
+
 /* --------------------HEADER + MOBILE MENU */
 .hamburger-button{
     border:none;
@@ -97,7 +103,7 @@ a.custom-btn-dark-hov:hover{
     text-transform: uppercase;
     z-index: 2;
 }
-
+.jpg
 .mobile-menu a:hover{
     color:#000000;
 }
