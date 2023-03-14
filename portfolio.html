@@ -40,8 +40,8 @@ portfolio-projects:
 
 
 <!------------ PORTFOLIO SITES ------------>
+{% for item in page.portfolio-projects %}
 <section class="px-6 py-10 md:py-14 md:px-16 lg:px-36">
-  {% for item in page.portfolio-projects %}
   <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center">
     <img src="{{item.site-l_image}}" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-12 sm-hide"></div>
@@ -52,8 +52,7 @@ portfolio-projects:
     </div>
   </div>
 
-  <!-- Remove class of "pb-20" on final <div> holding the project info and img -->
-  <div class="grid grid-cols-2 md:grid-cols-7 gap-4 md:pb-0 items-center">
+  <div class="grid grid-cols-2 md:grid-cols-7 gap-4 items-center">
     <div class="col-span-2 md:col-span-2 grid content-center md:text-right order-2 md:order-none">
       <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{item.site-r-name}}</h2>
       <p class="mb-2 italic"><span class="font-medium not-italic">Features:</span> {{item.site-r-features}}</p>
@@ -62,9 +61,8 @@ portfolio-projects:
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-10 sm-hide"></div>
     <img src="{{item.site-r_image}}" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover"/>
   </div>
-  {% endfor %}
 </section>
-
+{% endfor %}
 
 <!------------ SMALL BANNER ------------>
 {% include sm-banner.html %}
