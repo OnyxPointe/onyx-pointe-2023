@@ -86,34 +86,39 @@ sm-banner-link: /contact.html
 {% include sm-banner.html %}
 
 <!------------ PRICING ------------>
-<section class="mb-14 py-14 px-16">
-  <div class="">
-    <h4 class="font-header text-2xl font-extralight uppercase drop-shadow-md">Pricing</h4>
+<section class="mb-14 py-14 md:w-11/12 lg:w-8/12 mx-auto">
+  <!-- <div class=""> -->
+    <!-- <h4 class="font-header text-2xl font-extralight uppercase drop-shadow-md">Pricing</h4>
     <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut mollitia sunt beatae cumque officiis.</p>
-  </div>
-  <div class="grid gap-8 pt-4 md:grid-cols-3">
-    <div class="sm-hide">
-      <img src="/images/ph.jpg" class="h-full w-full bg-gray-200 object-cover" />
-    </div>
+  </div> -->
+
+  <div class="grid gap-8 pt-4 md:grid-cols-3 items-center h-[35vh]">
     <div class="">
+      <h4 class="font-header text-2xl font-extralight uppercase drop-shadow-md">Pricing</h4>
+      <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut mollitia sunt beatae cumque officiis.</p>
+      <img src="/images/ph.jpg" class="h-[25vh] w-full bg-gray-200 object-cover" />
+    </div>
+
+    <div class="border-white p-3">
       <p class="uppercase">Website Type</p>
       <ul class="text-sm">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
       </ul>
-      <img src="/images/ph.jpg" class=" bg-gray-200 my-4 mx-2 h-20 object-cover" />
-      <p class="mx-8 border border-white text-center">Price</p>
+      <!-- <img src="/images/ph.jpg" class=" bg-gray-200 my-4 h-20 object-cover" /> -->
+      <p class="mx-9 py-2 border-white text-center text-sm">Starting at $500</p>
     </div>
-    <div class="">
+
+      <div class="border-white p-3">
       <p class="uppercase">Website Type</p>
       <ul class="text-sm">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
       </ul>
-      <img src="/images/ph.jpg" class=" bg-gray-200 my-4 mx-2 h-20 object-cover" />
-      <p class="mx-8 border border-white text-center">Price</p>
+      <!-- <img src="/images/ph.jpg" class=" bg-gray-200 my-4 h-20 object-cover" /> -->
+      <p class="mx-9 py-2 border-white text-center text-sm">Starting at $500</p>
     </div>
   </div>
 </section>
