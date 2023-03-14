@@ -69,11 +69,11 @@ a.custom-btn-dark-hov:hover{
 }
 
 .bg-img-index{
-  background-image:url('images/ph.jpg');
+  background-image:url('/images/ph.jpg');
 }
 
 .bg-concrete{
-    background-image:url('images/concrete-bg-');
+    background-image:url('/images/concrete-bg-30.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -91,7 +91,7 @@ a.custom-btn-dark-hov:hover{
 .hamburger-button.active{color: #A3809A;}
 
 .mobile-menu{
-    background-color:#A3809A;
+    background-color:#6A4D64;
     color:#FFFFFF;
     display:none;
 }

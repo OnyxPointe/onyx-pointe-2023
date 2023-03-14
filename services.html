@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Services Page
-intro-bg-color: dark
+intro-color: dark
 page-h1: Services
 intro-blurb: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus molestiae incidunt iste impedit exercitationem iure consectetur aut corrupti rerum accusantium esse eum, hic placeat neque dolor velit. Maxime, earum architecto.
+intro-ft_img: /images/ph.jpg
 sm-banner-text: Work with us
 sm-banner-link: /contact.html
 ---
 
 <!------------ SERVICES INTRO ------------>
-{% include intro-imgs.html %}
+{% include intro-one.html %}
 <!-- <section class="mt-14 mb-14 grid grid-cols-5 gap-3 bg-purple-300 px-16 py-10">
   <div class="col-span-3">
     <h1 class="pb-2 text-2xl uppercase">Custom Coded Websites</h1>
@@ -22,9 +23,50 @@ sm-banner-link: /contact.html
 </section> -->
 
 <!------------ OUR PROCESS ------------>
-<section class="pt-20 pb-0 px-16">
-  <h2 class="text-center text-2xl uppercase font-header drop-shadow-md">Our Process</h2>
+<section class="pt-20 pb-0">
+  <h2 class="text-center text-2xl uppercase font-header drop-shadow-md font-extralight pb-10">Our Process</h2>
+  <div class="relative grid grid-cols-6 content-center gap-4 py-6">
+    <div class="absolute ml-6 top-16 col-span-1 grid w-52 grid-cols-8 border border-light-p py-10 pl-2">
+      <p class="text-3xl italic">1</p>
+      <h3 class="col-span-4 grid content-center uppercase">Design</h3>
+    </div>
+    <div class="col-span-3 col-start-4">
+      <img src="/images/ph.jpg" class="h-[30vh] bg-gray-400" />
+    </div>
+    <div class="col-span-6 py-4 px-6">
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos consectetur debitis impedit animi perferendis eligendi inventore unde natus! Nobis</p>
+    </div>
+  </div>
+
+  <div class="relative grid grid-cols-6 content-center gap-4 py-6">
+    <div class="col-span-6 py-4 px-6 order-last md:order-none">
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos consectetur debitis impedit animi perferendis eligendi inventore unde natus! Nobis</p>
+    </div>
+    <div class="col-span-3">
+      <img src="/images/ph.jpg" class="h-[30vh] bg-gray-400" />
+    </div>
+    <div class="absolute mr-6 top-16 right-0 col-span-1 grid w-52 grid-cols-8 border border-light-p py-10 pr-2 text-right">
+      <h3 class="col-span-4 col-start-4 grid content-center uppercase">Development</h3>
+      <p class="text-3xl italic">2</p>
+    </div>
+  </div>
+</section>
+
+<section class="pt-20 pb-0 md:px-16">
+  <h2 class="text-center text-2xl uppercase font-header drop-shadow-md font-extralight">Our Process</h2>
   <div class="relative grid grid-cols-5 content-center gap-4 py-14">
+    <div class="absolute ml-6 top-24 md:top-20 col-span-1 grid w-52 grid-cols-8 border border-light-p py-10 pl-2">
+      <p class="text-3xl italic">1</p>
+      <h3 class="col-span-4 grid content-center uppercase">Design</h3>
+    </div>
+    <div class="col-span-4 col-start-3 md:col-span-2 md:col-start-2">
+      <img src="/images/ph.jpg" class="h-[30vh] md:h-full bg-gray-400" />
+    </div>
+    <div class="col-span-5 py-4 px-6 md:col-span-2 md:p-0 md:py-10">
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos consectetur debitis impedit animi perferendis eligendi inventore unde natus! Nobis</p>
+    </div>
+  </div>
+  <!-- <div class="relative grid grid-cols-5 content-center gap-4 py-14">
     <div class="absolute top-20 col-span-1 grid w-52 grid-cols-8 border border-light-p py-10 pl-2">
       <p class="text-3xl italic">1</p>
       <h3 class="col-span-4 grid content-center uppercase">Design</h3>
@@ -35,8 +77,8 @@ sm-banner-link: /contact.html
     <div class="col-span-2 py-10">
       <p class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos consectetur debitis impedit animi perferendis eligendi inventore unde natus! Nobis</p>
     </div>
-  </div>
-  <div class="relative grid grid-cols-5 content-center gap-4 py-14">
+  </div> -->
+  <!-- <div class="relative grid grid-cols-5 content-center gap-4 py-14">
     <div class="col-span-2 py-10">
       <p class="text-right text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos consectetur debitis impedit animi perferendis eligendi inventore unde natus! Nobis</p>
     </div>
@@ -47,10 +89,10 @@ sm-banner-link: /contact.html
       <h3 class="col-span-4 col-start-4 grid content-center uppercase">Development</h3>
       <p class="text-3xl italic">2</p>
     </div>
-  </div>
+  </div> -->
 
   <!-- 3-5 -->
-  <div class="relative grid grid-cols-5 content-center gap-4 py-14">
+  <!-- <div class="relative grid grid-cols-5 content-center gap-4 py-14">
     <div class="absolute top-20 col-span-1 grid w-52 grid-cols-8 border border-light-p py-10 pl-2">
       <p class="text-3xl italic">3</p>
       <h3 class="col-span-4 grid content-center uppercase">Review</h3>
@@ -86,6 +128,7 @@ sm-banner-link: /contact.html
       <p class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eos consectetur debitis impedit animi perferendis eligendi inventore unde natus! Nobis</p>
     </div>
   </div>
+</section> -->
 </section>
 
 <!------------ SMALL BANNER ------------>
