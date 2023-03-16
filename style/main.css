@@ -39,10 +39,7 @@ p{
 
 p:last-child{margin-bottom: 0;}
 
-p a{
-    border-bottom:1px solid;
-    display:inline-block;
-}
+p a{border-bottom:1px solid;}
 p.no-bb a{border-bottom:none;}
 
 a:hover{
