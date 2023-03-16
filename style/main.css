@@ -39,7 +39,10 @@ p{
 
 p:last-child{margin-bottom: 0;}
 
-p a{border-bottom:1px solid;}
+p a{
+    border-bottom:1px solid;
+    display:inline-block;
+}
 p.no-bb a{border-bottom:none;}
 
 a:hover{
@@ -49,7 +52,7 @@ a:hover{
 
 ul{
     list-style: square;
-    margin-left:3rem;
+    margin-left:2rem;
 }
 
 li{font-weight:300;}
