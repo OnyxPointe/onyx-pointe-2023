@@ -3,6 +3,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO META TAGS -->
+    <title> {{page.seo.title}} </title>
+    <meta name="description" content="{{page.seo.meta-description}}">
+    <meta name="keywords" content="{{page.seo.meta-keywords}}">
+
+    <!--  SOCIAL MEDIA SHARING META TAGS -->
+    <meta property="og:title" content="{{page.seo.title}}">
+    <meta property="og:description" content="{{page.seo.meta-description}}">
+    <meta property="og:image" content="{{page.seo.featured-image_path}}">
+    <meta property="og:url" content="{{page.url}}">
+    <meta name="twitter:card" content="{{page.seo.meta-description}}">
+    <meta name="og:site_name" content="{{site.data.settings.general.site-name}}">
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +34,11 @@
     <meta name="msapplication-TileColor" content="#232323">
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#232323">
+
+    <!-- HIDE OR SHOW ON GOOGLE -->
+    {% if page.seo.hide-from-google == true %}
+      <meta name="robots" content="noindex">
+    {% endif %}
 
     <!-- MY STYLESHEET -->
     <link rel="stylesheet" href="{{ '/dist/main.css' }}" type="text/css">
