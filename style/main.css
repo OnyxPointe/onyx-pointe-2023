@@ -57,6 +57,10 @@ li a{border-bottom: 1px solid;}
 li a:hover{color:#A3809A;}
 
 section.privacy-policy p{margin-bottom:1rem;}
+section.privacy-policy p a{
+    border-bottom:none;
+    text-decoration: underline;
+}
 
 a.custom-btn-dark-hov:hover{
     background-color:#393939;
