@@ -166,10 +166,10 @@ a.custom-btn-dark-hov:hover{
     .sm-hide{display:none;}
     .sm-show {display: inline-grid;}
 
-    .arrow{
+    /* .arrow{
         font-size:1.4rem;
         margin-top:.2rem;
-    }
+    } */
 
 }
 
