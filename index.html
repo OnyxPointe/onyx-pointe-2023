@@ -25,8 +25,8 @@ reviewer-location-two: Netherlands
   </div>
   <div class="p-6 absolute w-5/6 bg-dark right-0 top-[3.6rem] h-[55vh] grid grid-cols-8 content-center">
     <div class="col-span-8">
-      <h2 class="font-header editable uppercase text-[1.15rem] md:text-2xl md:font-extralight">{{page.tag-line}}</h2>
-      <p class="mt-3 editable">{{page.intro-blurb}}</p>
+      <h2 class="font-header uppercase text-[1.15rem] md:text-2xl md:font-extralight">{{page.tag-line}}</h2>
+      <p class="mt-3">{{page.intro-blurb}}</p>
     </div>
   </div>
 </section>
@@ -38,13 +38,13 @@ reviewer-location-two: Netherlands
   </div>
   <div class="col-span-5 md:col-span-3 row-span-1 lg:row-span-2 py-2">
     <h1 class="uppercase font-logo relative">Onyx <span class="absolute left-[6rem] bottom-[.5rem] px-1">.</span> Pointe</h1>
-    <p class="lg:text-base editable">{{page.intro-blurb}}</p>
+    <p class="lg:text-base">{{page.intro-blurb}}</p>
   </div>
   <div class="col-span-5 md:col-span-3 row-span-4 lg:row-span-6 h-60 md:h-64 lg:h-96">
     <img src="/images/ph.jpg" class="w-full object-cover max-h-full lg:h-full bg-gray-200"/>
   </div>
   <div class="col-span-5 text-xl md:col-span-2 row-span-1 lg:row-span-2 py-2 px-6 md:p-6 text-center">
-    <h2 class="text-4xl md:text-3xl lg:text-4xl font-featured editable">{{page.tag-line}}</h2>
+    <h2 class="text-4xl md:text-3xl lg:text-4xl font-featured">{{page.tag-line}}</h2>
   </div>
 </section>
 
@@ -52,7 +52,6 @@ reviewer-location-two: Netherlands
 {% include sm-banner.html %}
 
 <!------------ RESPONSIVE + FAST ------------>
-<!-- TODO - Mystery gap at bottom idk where it comes from -->
 <section class="relative mx-6 mt-14 mb-4 md:mx-16 h-72 md:h-64 lg:h-96 ">
   <div class="h-full pb-3 flex w-2/5 md:w-2/4 bg-darkest-p px-10 absolute right-0 top-[3px]"></div>
   <div class="grid grid-cols-8 md:grid-cols-9 gap-5 md:gap-10 ml-6 md:ml-0 md:mr-8 lg:mx-16 py-6 pr-6 absolute inset-y-1 h-72 md:h-64 lg:h-full ">
@@ -72,16 +71,22 @@ reviewer-location-two: Netherlands
 <!------------ DESIGN BUILD LAUNCH ------------>
 <section class="grid grid-cols-3 gap-y-4 md:grid-cols-9 md:gap-3 lg:gap-8 px-6 md:px-16 py-4">
   <div class="col-span-3 bg-med-g text-black p-6 md:p-4 lg:p-7">
-    <h3 class="uppercase text-4xl mb-2 drop-shadow-md font-header editable">Design</h3>
-    <p class="editable">The first step to creating your dream website is coming up with a user-friendly and aesthetically pleasing design. We can take your vision and bring it to life as a functional website. Whether you have it all planned out or don’t have any idea where to begin, we will help you through every step of the process.</p>
+    <div data-aos="fade-up">
+      <h3 class="uppercase text-4xl mb-2 drop-shadow-md font-header editable">Design</h3>
+      <p class="editable">The first step to creating your dream website is coming up with a user-friendly and aesthetically pleasing design. We can take your vision and bring it to life as a functional website. Whether you have it all planned out or don’t have any idea where to begin, we will help you through every step of the process.</p>
+    </div>
   </div>
-  <div class="col-span-3 bg-dark p-6 md:p-4 lg:p-7">
-    <h3 class="uppercase text-4xl mb-2 drop-shadow-md font-header editable">Build</h3>
-    <p class="editable">Using custom code, we bring your unique brand vision to life, while ensuring your site will be fast, responsive, accessible for all, and user-friendly. We test your site across multiple browsers and device types to ensure it is looking its best everywhere.</p>
+  <div class="col-span-3 bg-dark p-6 md:p-4 lg:p-7" data-aos="fade-up">
+    <div data-aos="fade-up">
+      <h3 class="uppercase text-4xl mb-2 drop-shadow-md font-header editable">Build</h3>
+      <p class="editable">Using custom code, we bring your unique brand vision to life, while ensuring your site will be fast, responsive, accessible for all, and user-friendly. We test your site across multiple browsers and device types to ensure it is looking its best everywhere.</p>
+    </div>
   </div>
   <div class="col-span-3 bg-med-g text-black p-6 md:p-4 lg:p-7">
-    <h3 class="uppercase text-4xl mb-2 drop-shadow-md font-header editable">Launch</h3>
-    <p class="editable">Finally, it’s time to launch your site into the world for everyone to see! We can help host your site with a reliable hosting service, connect it to your domain and set it up with a content management system so you can quickly and easily make any future edits with no coding knowledge necessary.</p>
+    <div data-aos="fade-up">
+      <h3 class="uppercase text-4xl mb-2 drop-shadow-md font-header editable">Launch</h3>
+      <p class="editable">Finally, it’s time to launch your site into the world for everyone to see! We can help host your site with a reliable hosting service, connect it to your domain and set it up with a content management system so you can quickly and easily make any future edits with no coding knowledge necessary.</p>
+    </div>
   </div>
 </section>
 
@@ -104,8 +109,10 @@ reviewer-location-two: Netherlands
 
 <!------------ FEATURED PROJECTS ------------>
 <section class="mt-28 mb-14 md:mx-16 text-center text-black py-16 md:py-16 lg:py-24 px-6 lg:px-10 background-img">
-  <h3 class="uppercase text-3xl md:text-4xl font-header drop-shadow-md editable">Featured Projects</h3>
-  <p class="text-sm md:text-base pb-3 lg:pb-5 editable">Check out our <a href="/portfolio.html">portfolio</a> to see more of our work</p>
+  <div data-aos="zoom-in">
+    <h3 class="uppercase text-3xl md:text-4xl font-header drop-shadow-md editable">Featured Projects</h3>
+    <p class="text-sm md:text-base pb-3 lg:pb-5 editable">Check out our <a href="/portfolio.html">portfolio</a> to see more of our work</p>
+  </div>
   <div class="grid grid-cols-5 gap-y-6 md:grid-cols-10 md:gap-8 mx-4 md:mx-0 md:px-10 mt-8 relative">
     <p class="absolute bg-dark text-white py-1 px-2 text-sm rotate-90 uppercase -left-[5.8rem] top-[6.1rem] md:-left-[3.3rem] md:top-[6.2rem] lg:top-[9rem]">
       Willow Creek Rrailroad
