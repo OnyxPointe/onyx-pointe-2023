@@ -5,12 +5,13 @@ seo:
     title: Onyx Pointe - Portfolio Page
     meta-description: See some of our most recent web development projects. 
     meta-keywords: Web Development, Websites, Portfolio, Web Design, Our Work
-    featured-image_path: /images/phone-chiaro-creations-website.jpg
+    featured-image_path: 
     hide-from-google: false
 intro-color: darkest-p
 page-h1: Portfolio
 intro-blurb: Each site we build is designed not only to convey necessary information to your customers but also to set the tone of your brand, presenting a cohesive identity for your business that will make you stand out from your competition.
-intro-ft_img: /images/ph.jpg
+intro-ft_img: /images/mobile-the-sleep-co-plant.jpg
+intro-ft-img-alt: Phone displaying The Sleep Co shop website homepage.
 sm-banner-color: light-g
 sm-banner-text-color: black
 sm-banner-text: Learn more about what we offer
@@ -24,27 +25,33 @@ review-two: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, m
 reviewer-two: Chiaro Creations
 reviewer-location-two: Netherlands
 portfolio-projects:
- - site-l_image: /images/the-bunker-hotel-website.jpg
+ - site-l_image: /images/website-desktop-the-bunker-hotel.jpg
+   site-l-img-alt: The Bunker Hotel website homepage.
    site-l-name: The Bunker
    site-l-features: Single Page Site, Dynamic Location Map, Reservation Booking
    site-l-link: https://the-bunker.netlify.app/
-   site-r_image: /images/phone-chiaro-creations-website.jpg
+   site-r_image: /images/website-desktop-chiaro-creations.jpg
+   site-r-img-alt: Chiaro Creations Jewelry shop website homepage.
    site-r-name: Chiaro Creations
    site-r-features: E-commerce, Embedded Video, Product Listings, Quick Buy Button
    site-r-link: https://chiarocreations.com/
- - site-l_image: /images/phone-pacific-pro-realty-website-black-bg.jpg
+ - site-l_image: /images/website-desktop-pacific-pro-realty.jpg
+   site-l-img-alt: Pacific Pro Realty website homepage.
    site-l-name: Pacific Pro Realty
    site-l-features: Multipage Site, Embedded FlexMLS Home search, Dynamic Location Map
    site-l-link: www.google.com
-   site-r_image: /images/negroni-cocktail-bar-website.jpg
+   site-r_image: /images/website-desktop-negroni-cocktail-bar.jpg
+   site-r-img-alt: Negroni Cocktail Bar website homepage.
    site-r-name: Negroni Cocktail Bar
    site-r-features: Single Page Site, Online Menu, Opening Times
    site-r-link: https://negroni-cocktail-bar.netlify.app/ 
- - site-l_image: /images/phone-willow-creek-rr-website-black-bg.jpg
+ - site-l_image: /images/website-desktop-willow-creek-rr.jpg
+   site-l-img-alt: Willow Creek Railroad website homepage.
    site-l-name: Willow Creek Railroad
    site-l-features: Multipage Site, Private Member Only Page, Dynamic Location Map, Embeded Video
    site-l-link: https://willowcreekrr.org/
-   site-r_image: /images/the-sleep-co-website.jpg
+   site-r_image: /images/website-desktop-the-sleep-co.jpg
+   site-r-img-alt: The Sleep Co store website homepage.
    site-r-name: The Sleep Co
    site-r-features: Multi-Page Site, Product Gallery, Instant Chat Connectivity
    site-r-link: https://sleep-co-op.netlify.app/
@@ -56,13 +63,13 @@ portfolio-projects:
 <!------------ PORTFOLIO SITES ------------>
 {% for item in page.portfolio-projects %}
 <section class="px-6 py-10 md:py-14 md:px-16 lg:px-36">
-  <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center">
-    <img src="{{item.site-l_image}}" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover w-full"/>
+  <div class="grid grid-cols-2 md:grid-cols-7 gap-4 pb-20 md:pb-0 items-center md:mb-20">
+    <img src="{{item.site-l_image}}" alt="{{item.site-l-img-alt}}" class="col-span-2 md:col-span-3 bg-gray-200 object-cover w-full h-21"/>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-12 sm-hide"></div>
     <div class="col-span-2 md:col-span-2 grid content-center" data-aos="fade-left">
       <h2 class="mb-1  md:mb-0 uppercase text-2xl font-header">{{item.site-l-name}}</h2>
       <p class="mb-2 italic"><span class="font-medium not-italic editable">Features:</span> {{item.site-l-features}}</p>
-      <div><a href="{{item.site-l-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
+      <div><a href="{{item.site-l-link}}" target="_blank" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
     </div>
   </div>
 
@@ -70,10 +77,10 @@ portfolio-projects:
     <div class="col-span-2 md:col-span-2 grid content-center md:text-right order-2 md:order-none" data-aos="fade-right">
       <h2 class="mb-1 md:mb-0 uppercase text-2xl font-header">{{item.site-r-name}}</h2>
       <p class="mb-2 italic"><span class="font-medium not-italic editable">Features:</span> {{item.site-r-features}}</p>
-      <div><a href="{{item.site-r-link}}" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
+      <div><a href="{{item.site-r-link}}" target="_blank" class="bg-slate-50 text-black py-1 px-3 md:py-0.5 w-28 md:w-20 text-center text-sm rounded-sm custom-btn-dark-hov">Visit Site</a></div>
     </div>
     <div class="col-span-2 border-t-2 border-light-p md:h-16 lg:h-10 sm-hide"></div>
-    <img src="{{item.site-r_image}}" class="col-span-2 md:col-span-3 h-[60vh] bg-gray-200 object-cover w-full"/>
+    <img src="{{item.site-r_image}}" alt="{{item.site-r-img-alt}}" class="col-span-2 md:col-span-3 bg-gray-200 object-cover w-full h-21"/>
   </div>
 </section>
 {% endfor %}
