@@ -164,12 +164,6 @@ a.custom-btn-dark-hov:hover{
     .quote-icon{font-size:2rem;}
     .sm-hide{display:none;}
     .sm-show {display: inline-grid;}
-
-    /* .arrow{
-        font-size:1.4rem;
-        margin-top:.2rem;
-    } */
-
 }
 
 /* --------------------XS Media Query (36em / 576px) */
