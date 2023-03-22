@@ -1,12 +1,18 @@
 <section class="grid grid-cols-10 content-center py-10 md:py-14 md:px-16 text-center relative">
-    <!-- BANNER + ARROW SM SCREEN -->
-    <div class="col-span-10 md:col-span-8 lg:col-span-9 bg-{{page.sm-banner-color}} active:bg-dark-p px-3 py-8 md:py-6 md:p-6 text-{{page.sm-banner-text-color}} text-lg">
-        <p class="no-bb">{{page.sm-banner-text}} <a href="{{page.sm-banner-link}}" class="sm-show arrow"><img src="images/arrow-white.png" class="h-[1rem] inline-block"/></a></p>
+    <!-- BANNER -->
+    <div class="col-span-10 md:col-span-8 lg:col-span-9 bg-{{page.sm-banner-color}} px-3 py-8 md:py-6 md:p-6 text-{{page.sm-banner-text-color}} text-lg">
+        <!-- MD+ SCREENS - BANNER TEXT -->
+        <p class="no-bb hidden md:inline-block">{{page.sm-banner-text}} </p>
+
+        <!-- SM SCREENS - BANNER TEXT + ARROW -->
+        <a href="{{page.sm-banner-link}}" class="md:hidden"><p class="no-bb">{{page.sm-banner-text}} </p><img src="images/arrow-white.png" class="h-[1rem] inline-block"/></a>
     </div>
-    <!-- ARROW - MD+ SCREENS -->
+    <!-- MD+ SCREENS - ARROW -->
     <a href="{{page.sm-banner-link}}">
         <div class="col-span-2 {{page.sm-banner-arrow-color}} hover:bg-med-g p-3 absolute right-6 md:right-16 top-[4.29rem] lg:top-[4.27rem] w-28 md:w-56 lg:w-80 text-center hidden md:inline-block">
             <p class="no-bb"><img src="images/arrow-black.png" class="h-[1.49rem] inline-block"/></p>
         </div>
     </a>
 </section>
+
+
