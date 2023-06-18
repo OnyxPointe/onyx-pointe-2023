@@ -11,6 +11,8 @@
 }
 */
 
+.overflow-x{overflow-x: hidden;}
+
 /* --------------------ELEMENTS */
 .quote-icon {
     color:#C3ACBD;
