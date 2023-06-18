@@ -11,7 +11,10 @@
 }
 */
 
-.overflow-x{overflow-x: hidden;}
+.overflow-aos{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 /* --------------------ELEMENTS */
 .quote-icon {
